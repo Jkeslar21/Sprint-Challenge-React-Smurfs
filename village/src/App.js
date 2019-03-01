@@ -25,11 +25,21 @@ componentDidMount() {
     .catch(err => console.log(err))
 }
 
+addSmurf = (e, smurf) => {
+  e.preventDefault();
+  const {name, age, height} = smurf
+
+  axios
+    .post('http://localhost:3333/smurfs', {name, age, height})
+    .then(res => this.setState({ smurf: res.data }))
+    .catch(err => console.log(err))
+}
+
   render() {
     return (
       <div className="App">
         <Route path='/' component={NavBar} />
-        <Route path='/smurf-form' exact component={SmurfForm} />
+        <Route path='/smurf-form' exact render={() => <SmurfForm addSmurf={this.addSmurf}/>}/>
         <Route path='/' exact render={() => <Smurfs smurfs={this.state.smurfs}/>} />    
       </div>
     );
