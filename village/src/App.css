@@ -29,6 +29,10 @@
   text-decoration: none;
 }
 
+.nav-link:hover{
+  color: navy;
+}
+
 h1{
   margin: 2% auto;
   color: skyblue;
@@ -60,8 +64,14 @@ button{
   background-color: white;
   border: 2px solid red;
   font-weight: bold;
+  color: navy;
 }
 
 .formBG{
   height: 875px;
+}
+
+.subTitle{
+  color: navy;
+  font-size: 1.25rem;
 }
