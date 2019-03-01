@@ -6,6 +6,8 @@ import SmurfForm from './components/SmurfForm';
 import Smurfs from './components/Smurfs';
 import NavBar from './components/NavBar';
 
+
+
 import './App.css';
 
 class App extends Component {

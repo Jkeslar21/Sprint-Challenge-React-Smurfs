@@ -14,6 +14,7 @@ class Smurfs extends Component {
         </h1>
         <ul>
           {this.props.smurfs.map(smurf => {
+            if (smurf.id !== 0){
             return (
               <Smurf
                 name={smurf.name}
@@ -23,6 +24,7 @@ class Smurfs extends Component {
                 key={smurf.id}
               />
             );
+            }
           })}
         </ul>
       </div>
