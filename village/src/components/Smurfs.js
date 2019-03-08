@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
-
 import Smurf from './Smurf';
 
 class Smurfs extends Component {
-  render() {
+    render() {
     return (
       <div className="Smurfs">
-        <h1>Smurf Village</h1>
+        <h1>
+          Smurf Village<br/>
+          <span className='subTitle' >
+            #web17_gabe
+          </span>
+        </h1>
         <ul>
           {this.props.smurfs.map(smurf => {
+            if (smurf.id !== 0){
             return (
               <Smurf
                 name={smurf.name}
@@ -18,6 +23,7 @@ class Smurfs extends Component {
                 key={smurf.id}
               />
             );
+            }
           })}
         </ul>
       </div>

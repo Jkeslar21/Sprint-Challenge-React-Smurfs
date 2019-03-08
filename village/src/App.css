@@ -1,3 +1,80 @@
 .App {
   text-align: center;
+  background-image: url('http://wallpapersdsc.net/wp-content/uploads/2016/08/Smurfs-The-Lost-Village-for-desktop.jpg');
+  background-attachment: fixed;
+  padding: 1%;
+}
+
+.Smurfs{
+  margin: auto;
+}
+
+.Smurf{
+  margin: 2% auto;
+  max-width: 260px;
+  background-color: white;
+  padding: 5px;
+  background-color: skyblue;
+  border: 2px solid red;
+  color: white;
+  border-radius: 18px;
+  position: relative;
+  right: 21px;
+}
+
+.nav-link{
+  margin: 2%;
+  border-bottom: 2px solid red;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-link:hover{
+  color: navy;
+}
+
+h1{
+  margin: 2% auto;
+  color: skyblue;
+  background-color: white;
+  width: 235px;
+  border-radius: 18px;
+  border: 3px solid red;
+  padding: 1%;
+}
+
+.SmurfForm{
+  margin: 2% auto;
+  max-width: 250px;
+  background-color: white;
+  padding: 10px;
+  background-color: skyblue;
+  border: 2px solid red;
+  color: white;
+  border-radius: 18px;
+}
+
+input{
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 18px;
+}
+
+button{
+  border-radius: 18px;
+  background-color: white;
+  border: 2px solid red;
+  font-weight: bold;
+  color: navy;
+}
+
+.formBG{
+  height: 875px;
+}
+
+.subTitle{
+  color: navy;
+  font-size: 1.25rem;
 }
